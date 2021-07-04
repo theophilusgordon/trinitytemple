@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.clear-top {
+    margin-top: 13vh
+}
+
+.top {
+    height: 4vh;
+    background-color: gold;
+    overflow: hidden
+}
+
+.top p {
+    padding-left: 20%;
+    color: #f1f1f1;
+}
+
+nav {
+    margin-top: 4vh;
+    background-color: #f1f1f1;
+}
+
+.top,
+nav {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+
+.nav-item {
+    color: #252063;
+    font-weight: 600
+}
+
+.home {
+    width: 100%;
+    background-color: #f1f1f1
+}
+
+.home-content {
+    width: 80%;
+    margin-left: 10%
+}
+
+.home-content h1,
+.home-content h2,
+.home-content p {
+    text-transform: uppercase;
+    color: #252063
+}
+
+.home-content h1 {
+    font-size: 9rem;
+    padding-bottom: .25em;
+    font-weight: 700
+}
+
+.home-content h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 0.5em
+}
+
+.home-content span {
+    font-size: 1.5rem;
+    font-weight: 300
+}
+
+.streaming {
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(to bottom, #f1f1f1 50%, gold 50%);
+    overflow: hidden
+}
+
+.streaming-content {
+    width: 80%;
+    margin-left: 10%
+}
+
+.streaming-content img {
+    width: 100%
+}
+
+.streaming button {
+    border: 3px solid #252063;
+    border-radius: 10px;
+    padding: 1em 1.5em;
+    width: 270px;
+    color: #252063;
+    margin-left: 50%;
+    margin-top: 2em;
+    transform: translate(-50%, -50%);
+    transition: all .5s ease-in-out
+}
+
+.streaming button:hover {
+    color: #f1f1f1;
+    background-color: #252063
+}
+
+.ministries {
+    background-color: #f1f1f1;
+    width: 100%
+}
+
+.ministries-content {
+    width: 80%;
+    margin-left: 10%
+}
+
+.ministries-content h2,
+.ministries-content p {
+    text-align: center;
+    padding: 1em;
+    color: #252063
+}
+
+.ministries-content h2 {
+    font-size: 2rem;
+    font-weight: 800
+}
+
+.ministries-content p {
+    font-size: 1.2rem
+}
+
+.ministries-content button {
+    text-align: center;
+    margin: 4em 0 4em 50%;
+    transform: translate(-50%, -50%);
+    padding: .5em 1em;
+    background-color: #b7b7b7;
+    border: none;
+    transition: all .5s ease-in-out
+}
+
+.ministries-content button:hover {
+    color: #f1f1f1;
+    background-color: #252063
+}
+
+.extras {
+    width: 100%;
+    background-color: gold
+}
+
+.extras-content {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    color: #252063;
+    text-align: center
+}
+
+.extras-content-text,
+.extras-content-images {
+    padding: 2em 0
+}
+
+.extras-content-text {
+    display: flex;
+    flex-direction: column;
+    width: 35%
+}
+
+.extras-content-text h3 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600
+}
+
+.extras-content-text p {
+    font-size: 1.2rem
+}
+
+.extras-content-images {
+    display: flex;
+    width: 50%
+}
+
+.branch-pastor {
+    position: absolute;
+    right: 35%;
+    margin-top: 5%
+}
+
+.branch-pastor img {
+    width: 80%
+}
+
+.founder {
+    position: relative;
+    right: 0
+}
+
+.founder img {
+    width: 100%
+}
+
+.about {
+    margin-bottom: 3em
+}
+
+.the-church {
+    width: 100%;
+    height: 75vh;
+    overflow-y: hidden
+}
+
+.the-church::before {
+    content: "";
+    z-index: 500;
+    position: absolute;
+    background: rgba(75, 65, 194, 0.25);
+    height: 75vh;
+    width: 100%
+}
+
+.the-church img {
+    width: 100%
+}
+
+.contact {
+    width: 100%;
+    background-color: gold
+}
+
+.contact-content {
+    width: 80%;
+    margin-left: 10%
+}
+
+.contact-content h2 {
+    text-align: center;
+    color: #252063;
+    padding-top: 2em;
+    font-size: 1.5rem;
+    font-weight: 800;
+    overflow: hidden
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 0
+}
+
+.contact-buttons button {
+    color: #252063;
+    border: 3px solid #252063;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    background-color: gold;
+    transition: all .5s ease-in-out
+}
+
+.contact-buttons button:hover {
+    color: gold;
+    background-color: #252063
+}
+
+.contact-buttons button a {
+    text-decoration: none
+}
+
+.last-message {
+    text-align: center;
+    color: #252063;
+    font-weight: 600;
+    margin-bottom: 2em
+}
+
+.last-message a {
+    text-decoration: none
+}
+
+@media only screen and (max-width: 1199px) {
+    .clear-top {
+        margin-top: 12vh
+    }
+
+    span.navbar-toggler-icon {
+        width: 50px;
+        height: 40px;
+        background-color: #f1f1f1 !important;
+        color: #252063;
+    }
+
+    ul.navbar-nav li {
+        text-align: center
+    }
+
+    .home-content {
+        width: 80%;
+        margin-left: 10%
+    }
+
+    .home-content h1 {
+        font-size: 4rem
+    }
+
+    .home-content h1 span {
+        display: block
+    }
+
+    .home-content h2 {
+        font-size: 1.25rem;
+        font-weight: 600
+    }
+
+    .home-content span {
+        font-size: 1.5rem;
+        font-weight: 300
+    }
+
+    .streaming {
+        background-color: gold;
+        height: max-content
+    }
+
+    .streaming-content {
+        width: 100%;
+        margin: 0
+    }
+
+    .streaming button {
+        width: 200px;
+        font-size: 0.6rem
+    }
+
+    .streaming button a {
+        font-size: 0.5rem
+    }
+
+    .extras-content {
+        flex-direction: column
+    }
+
+    .extras-content-text {
+        width: 100%
+    }
+
+    .extras-content-images {
+        display: grid;
+        grid-template-columns: 150px 150px;
+        justify-content: center;
+        width: 100%
+    }
+
+    .extras-content-images img {
+        border-radius: 50%;
+        height: 150px;
+        width: 150px
+    }
+
+    .extras-content .branch-pastor {
+        position: relative;
+        right: 0;
+        margin-top: 0
+    }
+
+    .streaming-content,
+    .extras-content,
+    .ministries-content {
+        width: 90%;
+        margin-left: 5%
+    }
+
+    .the-church {
+        height: max-content
+    }
+
+    .the-church::before {
+        height: max-content
+    }
+
+    .contact-buttons {
+        flex-wrap: wrap;
+        justify-content: space-between
+    }
+
+    .contact-buttons button {
+        flex-basis: 45%;
+        font-size: .8rem;
+        margin-bottom: 1em
+    }
+
+    .last-message span {
+        display: block
+    }
+}
